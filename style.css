@@ -3,7 +3,7 @@
     font-weight: 400;
     font-style: normal;
 }
-html{
+body{
     background-image: url("img/litbackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
