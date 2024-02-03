@@ -1,9 +1,15 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 body{
     background-image: url("img/litbackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 table{
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 103px;
