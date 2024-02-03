@@ -15,5 +15,8 @@ div{
     font-size: 103px;
     color:aquamarine;
     text-align: center;
+    background-image: url('./img/litbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
