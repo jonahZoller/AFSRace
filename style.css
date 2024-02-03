@@ -1,0 +1,19 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    background-image: url(img/litBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 103px;
+    color:aquamarine;
+    text-align: center;
+}
+
