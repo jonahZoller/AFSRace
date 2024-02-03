@@ -88,26 +88,24 @@ async function rank(summoner_name,dataSummonerFull){
 }
 
 async function reorder(){
-    var Snowsayshi = await data("Snowsayshi");
-    var polo31 = await data("polo31")
-    var urdle2 = await data("urdle2");
-    var Lucyiel382 = await data("Lucyiel382");
-    var Kreator = await data("Kreator");
-    var ReinforcedToastr = await data("ReinforcedToastr");
+    var Snowsayshi = data("Snowsayshi");
+    var polo31 =  data("polo31")
+    var urdle2 =  data("urdle2");
+    var Lucyiel382 =  data("Lucyiel382");
+    var Kreator =  data("Kreator");
+    var ReinforcedToastr =  data("ReinforcedToastr");
     var Akubjay1 = await data("Akubjay1");
     console.log("done")
 
     for (let i = 0; i < divisons.length; i++) {
         if(divisons[i]>place1){
             place1 = summonerNames[i]+" "+summonerRanks[i]
+            console.log(place1)
         } else if (divisons[i]<place1 && divisons[i]>place2) {
             place2 = summonerNames[i]+" "+summonerRanks[i]
         }
         
     }
-    console.log(place1)
-    console.log(place2)
-    console.log(divisons)
     
 }
 
