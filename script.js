@@ -5,15 +5,9 @@ var summonerNames = [];
 var summonerRanks = [];
 var finalList = [];
 var divisons = [];
-var place1 = 0;
-var place2 = 0;
-var place3 = 0;
-var place4 = 0;
-var place5 = 0;
-var place6 = 0;
-var place7 = 0;
-
-reorder();
+var place1 = 0
+var place2 = 0 
+main();
 
 
 
@@ -59,7 +53,7 @@ async function rank(summoner_name,dataSummonerFull){
     // console.log(summonerRanks);
     // console.log(summoner_tier+" "+summoner_rank);
 
-    document.getElementById("summonRank_data_"+summoner_name).innerHTML = summoner_name+": "+summoner_tier+" "+summoner_rank;
+    document.getElementById("summonRank_data_"+summoner_name).innerHTML = summoner_name+": "+summoner_tier+" "+summoner_rank+" Wins: "+summoner_wins+" Losses: "+summoner_losses;
     // ir = 0, br = 1, si = 2, go = 3, pl = 4, em = 5, ma = 6, gr = 7, ch = 8
     var summonerDiv = summoner_tier.substring(0,2)
     if (summonerDiv == "IR"){
@@ -87,28 +81,38 @@ async function rank(summoner_name,dataSummonerFull){
     
 }
 
-async function reorder(){
+async function main(){
     var Snowsayshi = data("Snowsayshi");
     var polo31 =  data("polo31")
     var urdle2 =  data("urdle2");
     var Lucyiel382 =  data("Lucyiel382");
     var Kreator =  data("Kreator");
     var ReinforcedToastr =  data("ReinforcedToastr");
-    var Akubjay1 = await data("Akubjay1");
-    console.log("done")
+    var Akubjay1 = data("Akubjay1");
 
-    for (let i = 0; i < divisons.length; i++) {
-        if(divisons[i]>place1){
-            place1 = summonerNames[i]+" "+summonerRanks[i]
-            console.log(place1)
-        } else if (divisons[i]<place1 && divisons[i]>place2) {
-            place2 = summonerNames[i]+" "+summonerRanks[i]
-        }
-        
-    }
-    
+    reorder();
 }
 
+function reorder(){
+    
+    setTimeout(() => { 
+        var i = 0
+        place1 = summonerNames[i]+" "+summonerRanks[i]
+        while (i < 7) {
+            if(i==0){
+                place1 = summonerNames[i]+" "+summonerRanks[i]
+                console.log(place1)
+            } else if (divisons[i]<place1 && divisons[i]>place2) {
+                place2 = summonerNames[i]+" "+summonerRanks[i]
+            }
+            i++        
+        }
+        console.log(place1)
+    }, 2000);
+    
+    
+    
+}
 
 
 

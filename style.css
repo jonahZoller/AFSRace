@@ -4,19 +4,20 @@
     font-style: normal;
 }
 html{
-    background-image: url('./img/litbackground.jpg');
+    background-image: url("img/litbackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-div{
+table{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 103px;
-    color:aquamarine;
-    text-align: center;
-    background-image: url('./img/litbackground.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    color:aliceblue;
+    align-content: center;
 }
+#summonRank_data_Snowsayshi{
+    color: aliceblue;
+}
+
 
