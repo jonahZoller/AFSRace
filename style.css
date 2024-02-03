@@ -4,7 +4,7 @@
     font-style: normal;
 }
 html{
-    background-image: url(img/litBackground.jpg);
+    background-image: url(./img/litbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
