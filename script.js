@@ -1,4 +1,4 @@
-var APIKey = "RGAPI-321c9905-c30f-4b90-a4f5-0a1631e96c81";
+var APIKey = "RGAPI-fe250d67-923d-45cb-a63e-4047a437d0e1";
 var na_url = "https://na1.api.riotgames.com";
 
 var summonerNames = [];
